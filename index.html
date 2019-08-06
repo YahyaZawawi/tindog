@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+
+  <meta charset="utf-8">
+  <title>TinDog</title>
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,800,900|Ubuntu:300,400,700&display=swap" rel="stylesheet">
+
+  <!-- CSS Sheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Font Awesom -->
+  <script src="https://kit.fontawesome.com/36dee99fec.js"></script>
+
+  <!-- Bootstrap Script -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+
+
+
+<body>
+
+  <section id="title">
+
+    <!-- here we a container type fluid to make all the first section content responsive and make it in the middle-->
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark ">
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="">tindog</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <!-- we use id with a to scroll down -->
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Download</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Title -->
+
+
+      <!-- here we give the div we want to deal with a row ability the big div -->
+      <div class="row">
+        <!-- here the small divs we give the ability of coloms-col -->
+        <div class="col-lg-6">
+          <h1 class="Big-heading">Meet new and interesting dogs nearby.</h1>
+
+          <!-- here in the buttons we use class from BootStrap for Styling it and we use
+          FontAwesom for the icon the icom in the button -->
+          <!-- we add custom class for DownloadButtons -->
+          <button type="button" class="btn btn-dark btn-lg DownloadButtons"> <i class="fab fa-apple"></i> Dlownload</button>
+          <button type="button" class="btn btn-outline-light btn-lg DownloadButtons"><i class="fab fa-google-play"></i> Download</button>
+        </div>
+        <div class="col-lg-6">
+          <img class="Titel-image" src="images/iphone6.png" alt="iphone-mockup">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Features -->
+
+  <section id="features">
+
+    <!-- here we need a row to maneg the style we want -->
+    <div class="row">
+      <!-- here we use col responsivethe way we want AND Custom class -->
+      <div class="features-box col-md-12 col-lg-4">
+        <!-- here we change the size of the icon by using fa-3x you can check the tools on the we faiveryt -->
+        <i class="icon fas fa-check-circle fa-4x"></i>
+        <h3 class="Features-Text">Easy to use.</h3>
+        <p class="Features-Text-explan">So easy to use, even your dog could do it.</p>
+      </div>
+
+      <div class="features-box col-md-12 col-lg-4">
+        <!-- here we change the size of the icon by using fa-3x you can check the tools on the we faiveryt -->
+        <i class="icon fas fa-bullseye fa-4x"></i>
+        <h3 class="Features-Text">Elite Clientele</h3>
+        <p class="Features-Text-explan">We have all the dogs, the greatest dogs.</p>
+      </div>
+
+      <div class="features-box col-md-12 col-lg-4">
+        <!-- here we change the size of the icon by using fa-3x you can check the tools on the we faiveryt
+      and we add icon custom class so we can deal with all icons in once -->
+        <i class="icon fas fa-heart fa-4x"></i>
+        <h3 class="Features-Text">Guaranteed to work.</h3>
+        <p class="Features-Text-explan">Find the love of your dog's life or your money back.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+
+    <!-- this div carouselExampleInterval is from BootStrap is for image slider -->
+
+    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- here active need for starting the slider when the page is open
+        and data-interval is for the speed of the slider in ms
+        under class carousel-item active is the first content you want it in the first slid -->
+
+        <div class="carousel-item active" data-interval="10000">
+
+          <h2 class="testimonial-text">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+          <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
+          <em>Pebbles, New York</em>
+
+        </div>
+        <div class="carousel-item" data-interval="2000">
+          <!-- second slide content inside this div and so on -->
+
+          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+          <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+
+        </div>
+
+      </div>
+
+      <!-- span here is for the rrows it's from bootstarp -->
+      <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </section>
+
+
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+  </section>
+
+
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+    <h2 class="planing-heading">A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+
+    <!-- card class is for pricing content,it has header and body
+  header for headline and body for the content  -->
+
+<!--you can use card-deck class or row class in this time we use row-->
+    <!-- <div class="card-deck"> -->
+
+            <div class="row">
+<!-- we use row and col class to make it responcive -->
+<!-- lg-for labtop and above md-for tablet sm-for phone -->
+        <div class="pricing-cols col-lg-4 col-md-6 col-sm-12">
+
+          <div class="card">
+            <div class="card-header">
+              <h3 class="price-text">Chihuahua</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="price-text">Free</h2>
+              <p class="Sign-up-text">5 Matches Per Day</p>
+              <p class="Sign-up-text">10 Messages Per Day</p>
+              <p class="Sign-up-text">Unlimited App Usage</p>
+
+              <!-- btn-block to take all the size of the card,btn-lg to make the button larg -->
+              <button type="button" class="price-buttons btn btn-outline-primary btn-block btn-lg">Sign Up For Free</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="pricing-cols col-lg-4 col-md-6 col-sm-12">
+
+          <div class="card">
+            <div class="card-header">
+              <h3 class="price-text">Labrador</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="price-text">$49 / mo</h2>
+              <p class="get-started-text">Unlimited Matches</p>
+              <p class="get-started-text">Unlimited Messages</p>
+              <p class="get-started-text">Unlimited App Usage</p>
+              <button type="button" class="price-buttons btn btn-dark btn-block btn-lg">Get Started</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="pricing-cols col-lg-4 col-md-12 col-sm-12">
+
+          <div class="card">
+            <div class="card-header">
+              <h3 class="price-text">Mastiff</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="price-text">$99 / mo</h2>
+              <p class="Contact-us-text">Pirority Listing</p>
+              <p class="Contact-us-text">Unlimited Matches</p>
+              <p class="Contact-us-text">Unlimited Messages</p>
+              <p class="Contact-us-text">Unlimited App Usage</p>
+              <button type="button" class="price-buttons btn btn-dark btn-block btn-lg">Contact Us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+  </section>
+
+
+  <!-- CTA Section -->
+
+  <section id="cta">
+
+    <h3 class="find-the-true-text">Find the True Love of Your Dog's Life Today.</h3>
+    <button type="button" class="btn btn-dark btn-lg DownloadButtons"> <i class="fab fa-apple"></i> Dlownload</button>
+    <button type="button" class="btn btn-outline-light btn-lg DownloadButtons"><i class="fab fa-google-play"></i> Download</button>
+
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+
+<i class="contact-us fab fa-twitter"></i>
+<i class="contact-us fab fa-instagram"></i>
+<i class="contact-us fab fa-facebook-f"></i>
+<i class="contact-us fas fa-envelope"></i>
+
+    <p>© Copyright 2018 TinDog</p>
+
+
+  </footer>
+
+
+</body>
+
+</html>

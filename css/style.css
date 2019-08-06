@@ -1,0 +1,241 @@
+body {
+  font-family: Montserrat;
+}
+
+
+.container-fluid {
+  /* padding 3% for top and bottom  and 15% for left and right */
+  padding: 3% 15% 7%;
+}
+
+
+
+/* Headings */
+.Big-heading{
+  font-family: "Montserrat", black;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+  color: white;
+}
+
+
+
+/* title section  */
+
+#title {
+  background-color: #ff4c68;
+}
+
+
+
+/* Navgation bar Section */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: Ubuntu;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* adding space between items in nav bar */
+.nav-item {
+  padding: 0 18px;
+}
+
+/* here we styls the content of the items in navBar */
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+
+/* Download Buttons */
+.DownloadButtons {
+  /* top right buttom left */
+  margin: 5% 3% 5% 0;
+}
+
+
+
+/* Features Section */
+
+#features {
+  background-color: #fff;
+  /* here we add padding in top and buttom and left ad right to senter the content */
+  padding: 7% 15%;
+  /* here 1 is on the top of the page and-1 is تحتو */
+  z-index: 1;
+  position: relative;
+}
+
+.Features-Text{
+  font-size: 1.5rem;
+  /* to make it bold */
+  font-family: "Montserrat", black;
+  font-weight: bold;
+}
+
+.Features-Text-explan{
+  color: #8f8f8f;
+}
+
+.Titel-image {
+  width: 60%;
+  /* here we change the image type to rotat so we can rotate it */
+  transform: rotate(25deg);
+  /*the role to make z-index: works is position absolute;*/
+  position: absolute;
+  right: 30%;
+}
+
+/* here we add padding in top and buttom and left ad right to senter the content */
+
+.features-box {
+  text-align: center;
+  /* we add padding 5% to make the text in two lins and looks great */
+  padding: 5%;
+}
+
+.icon {
+  color: #ef8172;
+  margin-bottom: 2rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+/* Testimonials Section */
+
+#testimonials {
+  text-align: center;
+  background-color: #ef8172;
+  color: #fff;
+}
+
+.testimonial-image {
+  /* here we make the image small and circle by using border-radius:  */
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+/* to make the slider arrow looks nice */
+.carousel-item {
+  padding: 7% 15%;
+}
+
+.testimonial-text {
+  font-family: "Montserrat", black;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+/* press section  */
+
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+
+#pricing {
+  text-align: center;
+  padding: 100px;
+}
+.planing-heading{
+  font-family: "Montserrat", black;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.pricing-cols {
+  padding: 3% 2%;
+}
+.price-buttons{
+  background-color: #fff !important;
+  color: #ff4c68 !important;
+  border-color: #ff4c68 !important;
+
+}
+.price-buttons:hover{
+  background-color: #ef8172 !important;
+  color: #fff !important;
+}
+.card-header{
+  background-color:#ff4c68;
+
+}
+.price-text{
+  color: #fff;
+}
+.price-text{
+  color: #ff4c68;
+}
+.Sign-up-text{
+  color: #ff4c68;
+  opacity: 0.88;
+}
+.get-started-text{
+  color: #ff4c68;
+  opacity: 0.88;
+}
+.Contact-us-text{
+  color: #ff4c68;
+  opacity: 0.88;
+}
+
+ /* Call to Action  */
+#cta{
+  text-align: center;
+  background-color: #ff4c68;
+  padding:7% 7%;
+}
+.find-the-true-text{
+  font-size: 4rem;
+  line-height: 1.5;
+  font-weight: 800;
+  color: white;
+
+}
+
+/* Footer */
+
+#footer{
+text-align: center;
+background-color: #fff;
+padding: 10% 14%;
+
+
+}
+.contact-us{
+  padding-right: 1%;
+  padding-left: 1%;
+  padding-bottom: 3%;
+
+}
+
+/* media query Section */
+
+/* @media query (){} this is for conditions related to the design */
+@media(max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .Titel-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
